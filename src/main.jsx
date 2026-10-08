@@ -3,7 +3,10 @@ import { createRoot } from 'react-dom/client'
 import { io } from 'socket.io-client'
 import './styles.css'
 
-const socket = io(import.meta.env.VITE_SOCKET_URL || 'http://localhost:3001')
+const socket = io(
+  import.meta.env.VITE_SOCKET_URL ||
+  (import.meta.env.DEV ? 'http://localhost:3001' : window.location.origin)
+)
 const palette = ['#24233a','#ffffff','#ff5c70','#ffb020','#f7de40','#48d597','#42b4ff','#7c5cff','#eb70bf','#925e3c']
 const settingsDefault = { maxPlayers: 8, rounds: 3, drawTime: 80, wordCount: 3, hints: true, private: true }
 
