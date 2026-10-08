@@ -17,8 +17,8 @@ Open `http://localhost:5173` in two browser windows. Create a private room in on
 npm run build
 npm start
 ```
-##Live Deployment Link (Railway)
-Link: 
+##Live Deployment Link (Render)
+Link: https://skribbl-clone-faiz.onrender.com/
 
 why i choose railway, because I have multiple projects already deployed on render, and netlify.
 
