@@ -17,6 +17,10 @@ Open `http://localhost:5173` in two browser windows. Create a private room in on
 npm run build
 npm start
 ```
+##Live Deployment Link (Railway)
+Link: 
+
+why i choose railway, because I have multiple projects already deployed on render, and netlify.
 
 The production server serves the built client and Socket.IO from one process on `PORT` (default `3001`). Deploy to Render or Railway using build command `npm run build` and start command `npm start`.
 
